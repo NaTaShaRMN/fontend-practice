@@ -9,7 +9,7 @@ Tạo 1 trang html từ file PSD cho trước
 
 Thực hiện bởi [Nguyễn Anh Tuấn](https://github.com/NaTaShaRMN)
 # Liên kết
-- github page: https://sonbeo1999hd.github.io/frontend-practice/index.html
+- github page: https://natasharmn.github.io/fontend-practice/
 - PSD:https://drive.google.com/file/d/1EzDcLP29FS1ng6vQjGui8OKAXD1SSHkd/view
 ## Kiến thức nắm được
 
