@@ -134,9 +134,13 @@ footer {
 .abouts i {
     /* width: 86px; */
     /* size: 10px; */
-    font-size: 35px;
+    font-size: 24px;
     margin-right: 3px;
     margin-bottom: 37px;
+    color: #6b6b6b;
+    border: 1px solid;
+    border-radius: 45px;
+    padding: 5px;
 }
 
 .abouts img {
@@ -651,6 +655,14 @@ p.fullname {
     display: flex;
 }
 
+.list-awesome-item i:hover {
+    color: orange;
+}
+
+.list-awesome-item i:active {
+    color: red;
+}
+
 .list-awesome-item i {
     margin: 20px 11px;
 }
@@ -905,6 +917,10 @@ h4 .company-skill {
     border-right: 1px solid #faefef;
 }
 
+.service-type.fir {
+    border-left: 1px solid #faefef;
+}
+
 .service {
     display: flex;
     justify-content: space-around;
@@ -999,8 +1015,12 @@ a {}
     padding-right: 126px;
 }
 
+.nav-right li:hover {
+    background-color: #03a9f4;
+}
+
 .logo {
-    padding-left: 82px;
+    padding-left: 25px;
     margin: 30px 5px;
 }
 
@@ -1015,7 +1035,7 @@ a {}
 
 .nav-right li {
     padding: 38px 5px;
-    margin-right: 8px;
+    /* padding-right: 8px; */
 }
 
 .active {
@@ -1098,6 +1118,8 @@ background-size: cover;*/
 .slide {
     position: relative;
 }
+
+.slide {}
 
 .slide i {
     color: #a09595;
