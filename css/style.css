@@ -797,6 +797,10 @@ i.fab.fa-angular {
     margin: 32px 0px 21px;
 }
 
+.path a {
+    color: #404040;
+}
+
 .image-protfolio-item {
     /* width: 332px; */
     height: 220px;
@@ -917,6 +921,21 @@ h4 .company-skill {
     border-right: 1px solid #faefef;
 }
 
+.service-type img {
+    float: right;
+    margin: -12px 9px;
+    width: 36px;
+}
+
+img#higher {
+    margin-top: -21px;
+}
+
+.active img {
+    width: 47px;
+    margin-top: -22px;
+}
+
 .service-type.fir {
     border-left: 1px solid #faefef;
 }
@@ -1015,12 +1034,20 @@ a {}
     padding-right: 126px;
 }
 
+.nav-right a {
+    color: #404040;
+}
+
 .nav-right li:hover {
-    background-color: #03a9f4;
+    color: red;
+}
+
+.nav-right li:hover {
+    color: red;
 }
 
 .logo {
-    padding-left: 25px;
+    padding-left: 65px;
     margin: 30px 5px;
 }
 
@@ -1038,8 +1065,17 @@ a {}
     /* padding-right: 8px; */
 }
 
+li.btn-search {
+    margin-left: 95px;
+    color: #b5b5b5;
+}
+
 .active {
     background-color: #03a9f4;
+    color: white;
+}
+
+li.active a {
     color: white;
 }
 
@@ -1123,6 +1159,11 @@ background-size: cover;*/
 
 .slide i {
     color: #a09595;
+}
+
+i.far.fa-square.visit {
+    color: white;
+    font-weight: 500;
 }
 
 i.far.fa-square.active {
