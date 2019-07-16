@@ -41,6 +41,7 @@
 .menu-footer {
     /* margin: auto 0px; */
     margin: auto 151px;
+    font-size: 14px;
 }
 
 .menu-footer a {
@@ -132,10 +133,10 @@ footer {
 }
 
 .abouts i {
-    /* width: 86px; */
+    width: 36px;
     /* size: 10px; */
     font-size: 24px;
-    margin-right: 3px;
+    margin-right: 2px;
     margin-bottom: 37px;
     color: #6b6b6b;
     border: 1px solid;
@@ -324,8 +325,8 @@ span.active {
 
 .image-box-item1 span {
     position: absolute;
-    left: 1px;
-    bottom: 160px;
+    left: 0px;
+    bottom: 159px;
     background-color: #03a9f4;
 }
 
@@ -339,7 +340,7 @@ span {}
 .image-box-item2 span {
     position: absolute;
     left: 0px;
-    bottom: 160px;
+    bottom: 159px;
     background-color: #03a9f4;
 }
 
@@ -353,7 +354,7 @@ span {}
 .image-box-item3 span {
     position: absolute;
     left: 0px;
-    bottom: 160px;
+    bottom: 159px;
     background-color: #03a9f4;
 }
 
@@ -373,7 +374,7 @@ span {}
 .circle-item {
     width: 60px;
     height: 60px;
-    background-color: #ddd3d3;
+    background-color: #c0c1d4;
     margin: 10px 11px 11px;
     border-radius: 45px;
 }
@@ -401,16 +402,19 @@ span {}
 .next-pointer {
     flex: 1;
     /* width: 91px; */
+    /* font-size: 34px; */
+    /* margin-bottom: -18px; */
 }
 
 .next-pointer i {
     /* width: 100px; */
     /* height: 100px; */
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 .next-pointer i {
     height: 16px;
+    font-size: 34px;
     /* size: 57px; */
 }
 
@@ -459,6 +463,7 @@ iframe {
 
 .video-content p {
     margin-bottom: 24px;
+    font-weight: -10;
 }
 
 .video-file {
@@ -537,13 +542,18 @@ p.fullname {
     /* margin: 10px; */
 }
 
+.col.right i {
+    margin-left: 2px;
+}
+
 .col {
     /* border: 1px solid black; */
     height: 186px;
 }
 
-.col.left {
+.col.left i {
     /* padding-top: 29px; */
+    margin-left: 0px;
 }
 
 .col.left.last {
@@ -567,6 +577,7 @@ p.fullname {
 
 .next-pointer.first i {
     transform: rotate(180deg);
+    font-size: 34px;
 }
 
 .last {
@@ -577,6 +588,10 @@ p.fullname {
 
 .col.right.last {
     padding-top: 41px;
+}
+
+.col.right.last i {
+    margin-left: 0px;
 }
 
 .row {
@@ -596,8 +611,22 @@ p.fullname {
 }
 
 .row i {
-    padding-top: 11px;
-    padding-left: 17px;
+    /* padding-top: 11px; */
+    /* padding-left: 17px; */
+    padding: 4px;
+    margin-left: -5px;
+    margin-right: 8px;
+    /* border: 1px solid; */
+    border-radius: 45px;
+    background-color: #03a9f4;
+}
+
+.abouts i {
+    color: #6b6b6b;
+}
+
+i.fab.fa-facebook {
+    /* color: white; */
 }
 
 .team h2 {
@@ -681,6 +710,7 @@ div#androids {
 
 .list-skill {
     /* padding-top: 0px; */
+    margin-top: 75px;
 }
 
 .skill-name {
@@ -688,6 +718,7 @@ div#androids {
     margin-bottom: -1px;
     /* margin-top: 24px; */
     /* padding-top: 2px; */
+    margin-bottom: 17px;
 }
 
 .list-skill-item li {
@@ -702,10 +733,12 @@ div#androids {
 
 #angular {
     margin-left: 11px;
+    margin-top: 6px;
 }
 
 #html5 {
     margin-left: 13px;
+    margin-top: 6px;
 }
 
 .background-skill {
@@ -720,10 +753,12 @@ div#androids {
 
 #web-dev {
     margin-left: 5px;
+    margin-top: 6px;
 }
 
 .list-skill-item {
     display: flex;
+    margin-bottom: 17px;
 }
 
 #android {
@@ -734,6 +769,7 @@ div#android {
     /* background-color: blue; */
     /* padding: 0px 172px; */
     /* margin: 8px; */
+    margin-top: 6px;
 }
 
 .list-skill-item i {
@@ -790,7 +826,7 @@ i.fab.fa-angular {
     padding: 0px 166px;
     /* flex: 1; */
     background-color: #fafafa;
-    height: 451px;
+    height: 552px;
 }
 
 .path {
@@ -872,6 +908,11 @@ i.fab.fa-angular {
     border-bottom: 3px solid;
     font-size: 27px;
     /* margin-bottom: 112px; */
+    color: #404040;
+}
+
+.service-type a {
+    color: #404040;
 }
 
 .about p {
@@ -1072,6 +1113,14 @@ li.btn-search {
 
 .active {
     background-color: #03a9f4;
+    color: white;
+}
+
+.service-type.active a {
+    color: white;
+}
+
+.service-type.active span {
     color: white;
 }
 
