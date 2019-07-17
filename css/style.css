@@ -244,10 +244,12 @@ p.actives {
 
 .grid-tag span:hover {
     background-color: #03a9f4;
+    /* color: white; */
 }
 
 .grid-tag a {
     color: #6b6b6b;
+    padding: 11px 0px;
 }
 
 span.active {
@@ -891,6 +893,10 @@ i.fab.fa-angular {
     color: #404040;
 }
 
+.path a:hover {
+    color: red;
+}
+
 .image-protfolio-item {
     /* width: 332px; */
     height: 220px;
@@ -931,21 +937,41 @@ i.fab.fa-angular {
     border: 1px solid white;
 }
 
+.btn-banner-right:hover {
+    background-color: white;
+    color: #03a9f4;
+}
+
+.btn-banner-right a:hover {
+    color: #03a9f4;
+}
+
 .btn-banner-right a {
     color: #ffffff;
+    padding: 19px 0px;
 }
 
 .btn-banner-left {
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     /* padding: 10px; */
     padding: 12px 38px;
     /* background-color: white; */
     border-radius: 30px;
-    color: #10a0e1;
+    color: white;
     border: 1px solid white;
 }
 
+.btn-banner-left:hover {
+    background-color: white;
+    color: #03a9f4;
+}
+
 .btn-banner-left a {
+    color: white;
+    padding: 13px 0px;
+}
+
+.btn-banner-left a:hover {
     color: #03a9f4;
 }
 
