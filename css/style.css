@@ -48,6 +48,10 @@
     color: #969595;
 }
 
+.menu-footer a:hover {
+    color: #03a9f4;
+}
+
 a#blue-text {
     color: #03a9f4;
 }
@@ -92,6 +96,10 @@ footer {
     /* width: 290px; */
     height: 50px;
     display: flex;
+}
+
+.btn-about a:hover {
+    color: #cbcb00;
 }
 
 .btn-about span {
@@ -178,6 +186,7 @@ footer {
 .feedbacks h5 {
     margin-top: 35px;
     font-size: 20px;
+    color: #03a9f4;
 }
 
 .links-list-item {
@@ -186,6 +195,12 @@ footer {
     padding-bottom: 5px;
     border-bottom: 1px solid #6b6b6b;
 }
+
+.links-list-item p:hover {
+    color: white;
+}
+
+.links-list-item:hover {}
 
 .links-list-item img {
     margin-top: 4px;
@@ -223,6 +238,18 @@ p.actives {
     color: #6b6b6b;
 }
 
+.grid-tag a:hover {
+    color: white;
+}
+
+.grid-tag span:hover {
+    background-color: #03a9f4;
+}
+
+.grid-tag a {
+    color: #6b6b6b;
+}
+
 span.active {
     color: white;
 }
@@ -230,6 +257,10 @@ span.active {
 .post-item {
     display: flex;
     /* border-bottom: 1px solid #969595; */
+}
+
+a.post-item {
+    color: white;
 }
 
 .post-item small {
@@ -255,7 +286,7 @@ span.active {
 
 @font-face {
     font-family: Myriad;
-    src: url("../fonts/MYRIADPRO-REGULAR.OTF") format("truetype");
+    src: url("../fonts/Myriad\ Pro\ Regular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
@@ -326,7 +357,7 @@ span.active {
 .image-box-item1 span {
     position: absolute;
     left: 0px;
-    bottom: 159px;
+    bottom: 176px;
     background-color: #03a9f4;
 }
 
@@ -340,7 +371,7 @@ span {}
 .image-box-item2 span {
     position: absolute;
     left: 0px;
-    bottom: 159px;
+    bottom: 176px;
     background-color: #03a9f4;
 }
 
@@ -354,7 +385,7 @@ span {}
 .image-box-item3 span {
     position: absolute;
     left: 0px;
-    bottom: 159px;
+    bottom: 176px;
     background-color: #03a9f4;
 }
 
@@ -406,16 +437,30 @@ span {}
     /* margin-bottom: -18px; */
 }
 
-.next-pointer i {
+.next-pointer i:hover {
     /* width: 100px; */
     /* height: 100px; */
-    margin-top: 20px;
+    /* margin-top: 20px; */
+    /* font-weight: 600; */
+    /* color: yellow; */
 }
 
 .next-pointer i {
-    height: 16px;
+    /* height: 16px; */
     font-size: 34px;
     /* size: 57px; */
+}
+
+.next-point i:hover {
+    font-weight: 600;
+    color: yellow;
+}
+
+i.far.fa-arrow-alt-circle-right {}
+
+.next-pointer i:hover {
+    font-weight: 600;
+    color: yellow;
 }
 
 .style03 {
@@ -623,6 +668,15 @@ p.fullname {
 
 .abouts i {
     color: #6b6b6b;
+    font-size: 21px;
+    padding: 7px;
+}
+
+.abouts i:hover {
+    color: white;
+    background-color: #03a9f4;
+    */
+    /* background-color: #03a9f4; */
 }
 
 i.fab.fa-facebook {
