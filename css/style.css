@@ -7,6 +7,16 @@
     grid-gap: 2px;
 }
 
+.feature-item-content h5 {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.feature-item-content p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
 .btn-hide {
     height: 40px;
     width: 40px;
@@ -851,8 +861,10 @@ i.fab.fa-angular {
 .list-awesome {}
 
 .person-skill img {
-    margin-right: 16px;
+    margin-right: 10px;
     margin-left: 27px;
+    width: 70px;
+    height: 70px;
 }
 
 .person-skill {
@@ -930,7 +942,7 @@ i.fab.fa-angular {
 }
 
 .btn-banner-right {
-    padding: 12px 38px;
+    padding: 12px 4px;
     /* background-color: rebeccapurple; */
     margin-left: 51px;
     border-radius: 30px;
@@ -948,13 +960,13 @@ i.fab.fa-angular {
 
 .btn-banner-right a {
     color: #ffffff;
-    padding: 19px 0px;
+    padding: 13px 39px;
 }
 
 .btn-banner-left {
     /* background-color: #ffffff; */
     /* padding: 10px; */
-    padding: 12px 38px;
+    padding: 12px 4px;
     /* background-color: white; */
     border-radius: 30px;
     color: white;
@@ -968,7 +980,7 @@ i.fab.fa-angular {
 
 .btn-banner-left a {
     color: white;
-    padding: 13px 0px;
+    padding: 13px 39px;
 }
 
 .btn-banner-left a:hover {
