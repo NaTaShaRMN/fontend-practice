@@ -698,7 +698,7 @@
             </ul>
         </div>
         <div class="end">© themexpert 2017</div>
-        <div class="btn-hide"><a href="#header"><i class="fas fa-chevron-right"></i></a></div>
+        <div class="btn-hide" onclick="topFunction()"><a href="" title="return to top"><i class="fas fa-chevron-right"></i></a></div>
     </footer>
 
 
@@ -847,6 +847,11 @@
             }
             feedbackImage[feedbackIndex - 1].className += " visited";
             feedbackText[feedbackIndex - 1].style.display = "block";
+        }
+        // back tot top
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
         }
     </script>
 
