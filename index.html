@@ -7,11 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
     <title>Trang chủ</title>
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <div class="contact">
             <div class="contact-left">
                 <ul class="address">
@@ -38,7 +39,7 @@
             </div>
             <div class="nav-right">
                 <ul>
-                    <li class="active"><a href="#">HOME</a></li>
+                    <li class="actives"><a href="#">HOME</a></li>
                     <li><a href="#">DEMOS</a></li>
                     <li><a href="#">PORTFOLIO</a></li>
                     <li><a href="#">BLOG</a></li>
@@ -53,27 +54,80 @@
         </div>
     </header>
     <div class="container">
-        <div class="slide">
-            <div class="slide-content">
-                <h1>Let's Build</h1>
-                <h3>The Future of Digital Products Together.</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat enim illo iure accusantium voluptatibus, quis vitae quod! Aspernatur natus aliquid hic tenetur. Soluta accusamus veritatis omnis. Quis voluptatibus quae enim!</p>
-                <div class="btn-slide">
-                    <div class="btn-slide-left">
-                        <a href="#">Discover Theme</a>
+        <div class="slide-container">
+            <div class="slide fade" id="slide1">
+                <!--1318x447 -->
+                <div class="slide-content">
+                    <h1>Let's Build</h1>
+                    <h3>The Future of Digital Products Together.</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat enim illo iure accusantium voluptatibus, quis vitae quod! Aspernatur natus aliquid hic tenetur. Soluta accusamus veritatis omnis. Quis voluptatibus quae enim!</p>
+                    <div class="btn-slide">
+                        <div class="btn-slide-left">
+                            <a href="#">Discover Theme</a>
+                        </div>
+                        <div class="btn-slide-right">
+                            <a href="#">Discover Theme</a>
+                        </div>
                     </div>
-                    <div class="btn-slide-right">
-                        <a href="#">Discover Theme</a>
-                    </div>
+
                 </div>
-
             </div>
+            <div class="slide fade" id="slide2">
+                <!--1318x447 -->
+                <div class="slide-content">
+                    <h1>Let's Build</h1>
+                    <h3>The Future of Digital Products Together.</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat enim illo iure accusantium voluptatibus, quis vitae quod! Aspernatur natus aliquid hic tenetur. Soluta accusamus veritatis omnis. Quis voluptatibus quae enim!</p>
+                    <div class="btn-slide">
+                        <div class="btn-slide-left">
+                            <a href="#">Discover Theme</a>
+                        </div>
+                        <div class="btn-slide-right">
+                            <a href="#">Discover Theme</a>
+                        </div>
+                    </div>
 
+                </div>
+            </div>
+            <div class="slide fade" id="slide3">
+                <!--1318x447 -->
+                <div class="slide-content">
+                    <h1>Let's Build</h1>
+                    <h3>The Future of Digital Products Together.</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat enim illo iure accusantium voluptatibus, quis vitae quod! Aspernatur natus aliquid hic tenetur. Soluta accusamus veritatis omnis. Quis voluptatibus quae enim!</p>
+                    <div class="btn-slide">
+                        <div class="btn-slide-left">
+                            <a href="#">Discover Theme</a>
+                        </div>
+                        <div class="btn-slide-right">
+                            <a href="#">Discover Theme</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="slide fade" id="slide4">
+                <!--1318x447 -->
+                <div class="slide-content">
+                    <h1>Let's Build</h1>
+                    <h3>The Future of Digital Products Together.</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat enim illo iure accusantium voluptatibus, quis vitae quod! Aspernatur natus aliquid hic tenetur. Soluta accusamus veritatis omnis. Quis voluptatibus quae enim!</p>
+                    <div class="btn-slide">
+                        <div class="btn-slide-left">
+                            <a href="#">Discover Theme</a>
+                        </div>
+                        <div class="btn-slide-right">
+                            <a href="#">Discover Theme</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
             <ul>
-                <li><a href="#"><i class="far fa-square"></i></i></a></li>
-                <li><a href="#"><i class="far fa-square visit"></i></i></a></li>
-                <li><a href="#"><i class="far fa-square"></i></i></a></li>
-                <li><a href="#"><i class="far fa-square"></i></i></a></li>
+                <li onclick="currentSlide(1)"><i class="far fa-square"></i></li>
+                <li onclick="currentSlide(2)"><i class="far fa-square"></i></li>
+                <li onclick="currentSlide(3)"><i class="far fa-square"></i></li>
+                <li onclick="currentSlide(4)"><i class="far fa-square"></i></li>
             </ul>
 
         </div>
@@ -84,7 +138,7 @@
                 <p>Successfull Trends for Digital Product</p>
                 <p class="last-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea eius, velit non molestiae omnis quisquam ipsa neque consequatur?</p>
             </div>
-            <div class="service-type active">
+            <div class="service-type activess">
                 <img src="images/iconfinder_icon-ios7-camera-outline_211705.png" alt="">
                 <span><a href="#">User Experince</a></span>
                 <p>Sucessful Trends for Digital Product</p>
@@ -131,22 +185,73 @@
                 </ul>
             </div>
             <div class="image-protfolio">
-                <div class="image-protfolio-item">
+                <div class="image-protfolio-item" onclick="openModal(); currentSlide(1);">
 
                 </div>
-                <div class="image-protfolio-item active">
+                <div class="image-protfolio-item active" onclick="openModal(); currentSlide(2);">
 
                 </div>
-                <div class="image-protfolio-item">
+                <div class="image-protfolio-item" onclick="openModal(); currentSlide(3);">
 
                 </div>
-                <div class="image-protfolio-item">
+                <div class="image-protfolio-item" onclick="openModal(); currentSlide(4);">
 
                 </div>
-                <div class="image-protfolio-item">
+                <div class="image-protfolio-item" onclick="openModal(); currentSlide(5);">
 
                 </div>
-                <div class="image-protfolio-item">
+                <div class="image-protfolio-item" onclick="openModal(); currentSlide(6);">
+
+                </div>
+            </div>
+            <!-- Images used to open the lightbox -->
+
+
+            <!-- The Modal/Lightbox -->
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 6</div>
+                        <img src="images/slide1.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 6</div>
+                        <img src="images/slide2.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 6</div>
+                        <img src="images/slide3.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 6</div>
+                        <img src="images/slide4.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">5 / 6</div>
+                        <img src="images/slide4.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">6 / 6</div>
+                        <img src="images/slide1.jpg" style="width:100%">
+                    </div>
+
+                    <!-- Next/previous controls -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <!-- Caption text -->
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+
+                    <!-- Thumbnail image controls -->
 
                 </div>
             </div>
@@ -158,14 +263,10 @@
 
                     <ul>
                         <div class="list-awesome-item">
-                            <div class="background-sign">
-                                <i class="fas fa-minus"></i>
-                            </div>
-                            <li id="text-blue">
-                                <p>Responsive & Parallax Design</p>
-                            </li>
+                            <div class="color-sign"></div>
+                            <p>Responsive & Parallax Design</p>
                         </div>
-                        <li>
+                        <li id="li1">
                             <div class="person-skill">
                                 <img src="images/person.jpg" alt="person">
                                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi deserunt nesciunt tenetur totam provident quam modi inventore optio cupiditate, nam accusamus.
@@ -173,17 +274,27 @@
                             </div>
                         </li>
                         <div class="list-awesome-item">
-                            <div class="background-sign">
-                                <i class="fas fa-plus"></i>
-                            </div>
-                            <li>Free Demo Content Installations</li> <br>
+                            <div class="color-sign"></div>
+                            <p>Free Demo Content Installations</p> <br>
                         </div>
+                        <li id="li2">
+                            <div class="person-skill">
+                                <img src="images/person.jpg" alt="person">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi deserunt nesciunt tenetur totam provident quam modi inventore optio cupiditate, nam accusamus.
+                                </p>
+                            </div>
+                        </li>
                         <div class="list-awesome-item">
-                            <div class="background-sign">
-                                <i class="fas fa-plus"></i>
-                            </div>
-                            <li> Easty to use</li>
+                            <div class="color-sign"></div>
+                            <p> Easty to use</p>
                         </div>
+                        <li id="li3">
+                            <div class="person-skill">
+                                <img src="images/person.jpg" alt="person">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi deserunt nesciunt tenetur totam provident quam modi inventore optio cupiditate, nam accusamus.
+                                </p>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -547,8 +658,121 @@
             </ul>
         </div>
         <div class="end">© themexpert 2017</div>
-        <div class="btn-hide"><a href="#"><i class="fas fa-chevron-right"></i></a></div>
+        <div class="btn-hide"><a href="#header"><i class="fas fa-chevron-right"></i></a></div>
     </footer>
+
+
+    <script>
+        var slideIndex = 1;
+        showSlide(1);
+        loopSlide(1);
+
+        function loopSlide(n) {
+            if (true)
+                setTimeout(function() {
+                    slideIndex += n;
+                    if (slideIndex > 4) slideIndex = 1;
+                    showSlide(slideIndex);
+                    loopSlide(n);
+                }, 3000);
+        }
+
+
+
+        function showSlide(n) {
+            var i;
+            var slides = document.getElementsByClassName("slide");
+            var dots = document.querySelectorAll(".far.fa-square");
+            if (n >= slides.length) {
+                slideIndex = 1;
+            }
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" visit", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " visit";
+        }
+        // function solai(){
+        //     var slides = document.getElementsByClassName("slide");
+        //     var dots = document.querySelectorAll(".far.fa-square");
+        //     var index = 0;
+        //     var img = ["url(\"images/slide1.jpg\")", "url(\"images/slide2.jpg\")", "url(\"images/slide3.jpg\")" ];
+        //     setTimeout(function{
+        //         index++;
+        //         if (index>4) index = 0;
+
+        //     },3000);
+        // }
+
+        // xu li list awesome tab
+        var acc = document.getElementsByClassName("list-awesome-item");
+
+
+        for (let i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                console.log(panel);
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+        ////////////////////////////////
+
+        function openModal() {
+            document.getElementById("myModal").style.display = "block";
+        }
+
+        // Close the Modal
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+
+        var slideIndexs = 1;
+        showSlides(slideIndexs);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndexs += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndexs = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) {
+                slideIndexs = 1
+            }
+            if (n < 1) {
+                slideIndexs = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndexs - 1].style.display = "block";
+            dots[slideIndexs - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+    </script>
+    </script>
 </body>
 
 </html>
