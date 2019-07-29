@@ -48,6 +48,7 @@
                     <li class="btn-search">
                         <a href="#"><i class="fas fa-search"></i></a>
                     </li>
+                    <li class="input-search"><input type="text" placeholder="search..."></li>
                 </ul>
             </div>
 
@@ -698,7 +699,9 @@
             </ul>
         </div>
         <div class="end">© themexpert 2017</div>
-        <div class="btn-hide" onclick="topFunction()"><a href="" title="return to top"><i class="fas fa-chevron-right"></i></a></div>
+        <div class="btn-hide" onclick="topFunction()">
+            <div title="return to top"><i class="fas fa-chevron-right"></i></div>
+        </div>
     </footer>
 
 
@@ -853,6 +856,14 @@
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
         }
+
+        function showInputSearch() {
+
+            var input_search = document.querySelector(".input-search");
+            input_search.style.display = "block";
+        }
+        var btn_search = document.querySelector(".btn-search");
+        btn_search.addEventListener("click", showInputSearch);
     </script>
 
 </body>

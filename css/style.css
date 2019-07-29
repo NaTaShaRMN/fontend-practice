@@ -1249,11 +1249,25 @@ a {
 .nav-right {
     padding-right: 35px;
     text-align: center;
+    position: relative;
 }
 
 .nav-right ul>li {
     padding-right: 13px;
     text-align: center;
+}
+
+li.input-search {
+    width: 173px;
+    float: right;
+    margin-left: -45px;
+    position: absolute;
+    top: 1px;
+    right: -92px;
+}
+
+li.input-search {
+    display: none;
 }
 
 li.actives {
@@ -1295,6 +1309,14 @@ li.actives {
 .nav-right li {
     padding: 37px 10px;
     /* padding-right: 8px; */
+}
+
+li.input-search>input {
+    padding-left: 6px;
+    border-radius: 5px;
+    height: 21px;
+    box-shadow: brown;
+    /* -webkit-highlight: initial; */
 }
 
 li.actives a {
