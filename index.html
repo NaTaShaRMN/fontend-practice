@@ -124,10 +124,10 @@
                 </div>
             </div>
             <ul>
-                <li onclick="currentSlide(1)"><i class="far fa-square"></i></li>
-                <li onclick="currentSlide(2)"><i class="far fa-square"></i></li>
-                <li onclick="currentSlide(3)"><i class="far fa-square"></i></li>
-                <li onclick="currentSlide(4)"><i class="far fa-square"></i></li>
+                <li onclick="showSlide(1)"><i class="far fa-square"></i></li>
+                <li onclick="showSlide(2)"><i class="far fa-square"></i></li>
+                <li onclick="showSlide(3)"><i class="far fa-square"></i></li>
+                <li onclick="showSlide(4)"><i class="far fa-square"></i></li>
             </ul>
 
         </div>
@@ -185,22 +185,22 @@
                 </ul>
             </div>
             <div class="image-protfolio">
-                <div class="image-protfolio-item" onclick="openModal(); currentSlide(1);">
+                <div class="image-protfolio-item" onclick="openModal(); currentSlide(1);" id="image-protfolio-item1">
 
                 </div>
-                <div class="image-protfolio-item active" onclick="openModal(); currentSlide(2);">
+                <div class="image-protfolio-item active" onclick="openModal(); currentSlide(2);" id="image-protfolio-item2">
 
                 </div>
-                <div class="image-protfolio-item" onclick="openModal(); currentSlide(3);">
+                <div class="image-protfolio-item" onclick="openModal(); currentSlide(3);" id="image-protfolio-item3">
 
                 </div>
-                <div class="image-protfolio-item" onclick="openModal(); currentSlide(4);">
+                <div class="image-protfolio-item" onclick="openModal(); currentSlide(4);" id="image-protfolio-item4">
 
                 </div>
-                <div class="image-protfolio-item" onclick="openModal(); currentSlide(5);">
+                <div class="image-protfolio-item" onclick="openModal(); currentSlide(5);" id="image-protfolio-item5">
 
                 </div>
-                <div class="image-protfolio-item" onclick="openModal(); currentSlide(6);">
+                <div class="image-protfolio-item" onclick="openModal(); currentSlide(6);" id="image-protfolio-item6">
 
                 </div>
             </div>
@@ -214,32 +214,32 @@
 
                     <div class="mySlides">
                         <div class="numbertext">1 / 6</div>
-                        <img src="images/slide1.jpg" style="width:100%">
+                        <img src="images/project1.jfif" style="width:100%">
                     </div>
 
                     <div class="mySlides">
                         <div class="numbertext">2 / 6</div>
-                        <img src="images/slide2.jpg" style="width:100%">
+                        <img src="images/project2.jfif" style="width:100%">
                     </div>
 
                     <div class="mySlides">
                         <div class="numbertext">3 / 6</div>
-                        <img src="images/slide3.jpg" style="width:100%">
+                        <img src="images/project3.jfif" style="width:100%">
                     </div>
 
                     <div class="mySlides">
                         <div class="numbertext">4 / 6</div>
-                        <img src="images/slide4.jpg" style="width:100%">
+                        <img src="images/project4.jfif" style="width:100%">
                     </div>
 
                     <div class="mySlides">
                         <div class="numbertext">5 / 6</div>
-                        <img src="images/slide4.jpg" style="width:100%">
+                        <img src="images/project5.jfif" style="width:100%">
                     </div>
 
                     <div class="mySlides">
                         <div class="numbertext">6 / 6</div>
-                        <img src="images/slide1.jpg" style="width:100%">
+                        <img src="images/project6.jfif" style="width:100%">
                     </div>
 
                     <!-- Next/previous controls -->
@@ -279,7 +279,7 @@
                         </div>
                         <li id="li2">
                             <div class="person-skill">
-                                <img src="images/person.jpg" alt="person">
+                                <img src="images/human01.jfif" alt="person">
                                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi deserunt nesciunt tenetur totam provident quam modi inventore optio cupiditate, nam accusamus.
                                 </p>
                             </div>
@@ -290,7 +290,7 @@
                         </div>
                         <li id="li3">
                             <div class="person-skill">
-                                <img src="images/person.jpg" alt="person">
+                                <img src="images/human02.jfif" alt="person">
                                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi deserunt nesciunt tenetur totam provident quam modi inventore optio cupiditate, nam accusamus.
                                 </p>
                             </div>
@@ -488,25 +488,65 @@
             </div>
         </div>
         <div class="style03">
-            <div class="next-pointer first">
+            <div class="next-pointer first" onclick="plusFeedback(-1);">
                 <i class="far fa-arrow-alt-circle-right"></i>
             </div>
             <div class="feedback">
-                <p>This is the first template I have purchased from Themexpert and I will definitely purchase from them again. Being unfamiliar with their template engine I had a few issues but the support was quick, efficient and friendly. Lovely template,
-                    great service!</p>
-                <h5>Janey Cramer</h5>
-                <small>Owner, Muse Web</small>
+                <div class="feedback-list">
+                    <div class="feedback-list-item fade">
+                        <p>Tối qua (28/7), tập đầu tiên của "Ơn giời cậu đây rồi" mùa thứ 6 đã lên sóng với những thay đổi đáng kể. Theo đó, sau 5 mùa, NSƯT Hoài Linh không tham gia tiếp chương trình, còn người đẹp Lâm Vỹ Dạ sẽ lên NSƯT Hoài Linh không tham
+                            gia tiếp chương trình, còn người đẹp Lâm Vỹ Dạ sẽ lên </p>
+                        <h5>Rolnado</h5>
+                        <small>Owner, Muse Web</small>
+                    </div>
+                    <div class="feedback-list-item fade">
+                        <p>Từ sau khi công bố những điểm mới mẻ của mùa 6, chương trình đã vấp phải nhiều ý kiến tranh cãi của khán giả. Đặc biệt, quyết định thay thế vị trí nhấn chuông của Hoài Linh tại "Ơn giời cậu đây rồi" mùa thứ 6 cho NSƯT Xuân Bắc
+                            khiến nhiều fan của danh hài sở hữu nhà thờ tổ trăm tỷ cảm thấy tiếc nuối.</p>
+                        <h5>Janey Cramer</h5>
+                        <small>Owner, Muse Web</small>
+                    </div>
+                    <div class="feedback-list-item fade">
+                        <p>Chính vì thế, sau khi tập 1 của mùa 6 lên sóng, kênh YouTube của chương trình đã nhận được rất nhiều bình luận trái chiều từ khán giả. Đa số các ý kiến đều bày tỏ, chỉ có Hoài Linh mới nhận xét chuẩn xác và xứng đáng làm giám khảo.
+                            Trong khi đó, khá nhiều khán giả cho rằng Xuân Bắc chưa thực sự thích hợp để thay thế </p>
+                        <h5>Messi M10</h5>
+                        <small>Owner, Muse Web</small>
+                    </div>
+                    <div class="feedback-list-item fade">
+                        <p>Trong chương trình vừa lên sóng tối qua, khi lần đầu đảm nhiệm vị trí giám khảo để bấm chuông cho chương trình và nhận xét các phần thi, Xuân Bắc đã chia sẻ chân thành. Anh cho hay, khi trải nghiệm ở vị trí của đồng nghiệp, anh
+                            thấy Hoài Linh</p>
+                        <h5>Tuan Nguyen khong dau</h5>
+                        <small>Owner, Muse Web</small>
+                    </div>
+                    <div class="feedback-list-item fade">
+                        <p>This is the first template I have purchased from Themexpert and I will definitely purchase from them again. Being unfamiliar with their template engine I had a few issues but the support was quick, efficient and friendly. Lovely
+                            template, great service!</p>
+                        <h5>Silver Bullet</h5>
+                        <small>Owner, Muse Web</small>
+                    </div>
+                    <div class="feedback-list-item fade">
+                        <p>Trước đó, hồi đầu năm 2018, MC Xuân Bắc đã không xuất hiện mà thay vào đó, Trường Giang và Trấn Thành được mời thay thế vai trò này. Sự vắng mặt của Xuân Bắc khiến trên cư dân mạng đồn đoán về xích mích nội bộ ê-kíp "Ơn giời, cậu
+                            đây rồi". </p>
+                        <h5>No Name</h5>
+                        <small>Owner, Muse Web</small>
+                    </div>
+                    <div class="feedback-list-item fade">
+                        <p>Câu chuyện trở nên ồn ào hơn khi Trấn Thành hỏi vui trong một tập rằng: “Thưa anh Hoài Linh, hôm nay vắng mặt MC Xuân Bắc, một người dẫn chương trình quen thuộc, không biết anh có thấy thiếu thốn gì không?”. Đáp lại, Hoài Linh
+                            nói: “Không, tôi thấy đủ hơn”.</p>
+                        <h5>Janey Cramer</h5>
+                        <small>Owner, Muse Web</small>
+                    </div>
+                </div>
                 <div class="list-circle">
-                    <img src="images/human.jpg" alt="human" class="circle-item">
-                    <img src="images/human.jpg" alt="human" class="circle-item">
-                    <img src="images/human.jpg" alt="human" class="circle-item">
-                    <img src="images/human.jpg" alt="human" class="circle-item visited">
-                    <img src="images/human.jpg" alt="human" class="circle-item">
-                    <img src="images/human.jpg" alt="human" class="circle-item">
-                    <img src="images/human.jpg" alt="human" class="circle-item">
+                    <img src="images/human.jpg" alt="human" class="circle-item" onclick="currentFeedback(1)">
+                    <img src="images/human01.jfif" alt="human" class="circle-item" onclick="currentFeedback(2)">
+                    <img src="images/human02.jfif" alt="human" class="circle-item" onclick="currentFeedback(3)">
+                    <img src="images/human03.jfif" alt="human" class="circle-item visited" onclick="currentFeedback(4)">
+                    <img src="images/human04.jfif" alt="human" class="circle-item" onclick="currentFeedback(5)">
+                    <img src="images/human05.jfif" alt="human" class="circle-item" onclick="currentFeedback(6)">
+                    <img src="images/human06.jfif" alt="human" class="circle-item" onclick="currentFeedback(7)">
                 </div>
             </div>
-            <div class="next-pointer">
+            <div class="next-pointer" onclick="plusFeedback(1)">
                 <i class="far fa-arrow-alt-circle-right" style="  margin-top: 3px;"></i>
             </div>
         </div>
@@ -663,116 +703,8 @@
 
 
     <script>
-        var slideIndex = 1;
-        showSlide(1);
-        loopSlide(1);
-
-        function loopSlide(n) {
-            if (true)
-                setTimeout(function() {
-                    slideIndex += n;
-                    if (slideIndex > 4) slideIndex = 1;
-                    showSlide(slideIndex);
-                    loopSlide(n);
-                }, 3000);
-        }
-
-
-
-        function showSlide(n) {
-            var i;
-            var slides = document.getElementsByClassName("slide");
-            var dots = document.querySelectorAll(".far.fa-square");
-            if (n >= slides.length) {
-                slideIndex = 1;
-            }
-            if (n < 1) {
-                slideIndex = slides.length;
-            }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" visit", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " visit";
-        }
-        // function solai(){
-        //     var slides = document.getElementsByClassName("slide");
-        //     var dots = document.querySelectorAll(".far.fa-square");
-        //     var index = 0;
-        //     var img = ["url(\"images/slide1.jpg\")", "url(\"images/slide2.jpg\")", "url(\"images/slide3.jpg\")" ];
-        //     setTimeout(function{
-        //         index++;
-        //         if (index>4) index = 0;
-
-        //     },3000);
-        // }
-
-        // xu li list awesome tab
-        var acc = document.getElementsByClassName("list-awesome-item");
-
-
-        for (let i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var panel = this.nextElementSibling;
-                console.log(panel);
-                if (panel.style.maxHeight) {
-                    panel.style.maxHeight = null;
-                } else {
-                    panel.style.maxHeight = panel.scrollHeight + "px";
-                }
-            });
-        }
-        ////////////////////////////////
-
-        function openModal() {
-            document.getElementById("myModal").style.display = "block";
-        }
-
-        // Close the Modal
-        function closeModal() {
-            document.getElementById("myModal").style.display = "none";
-        }
-
-        var slideIndexs = 1;
-        showSlides(slideIndexs);
-
-        // Next/previous controls
-        function plusSlides(n) {
-            showSlides(slideIndexs += n);
-        }
-
-        // Thumbnail image controls
-        function currentSlide(n) {
-            showSlides(slideIndexs = n);
-        }
-
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("demo");
-            var captionText = document.getElementById("caption");
-            if (n > slides.length) {
-                slideIndexs = 1
-            }
-            if (n < 1) {
-                slideIndexs = slides.length
-            }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndexs - 1].style.display = "block";
-            dots[slideIndexs - 1].className += " active";
-            captionText.innerHTML = dots[slideIndex - 1].alt;
-        }
     </script>
-    </script>
+
 </body>
 
 </html>

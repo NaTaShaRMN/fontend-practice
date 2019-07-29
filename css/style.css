@@ -895,7 +895,7 @@ i.fab.fa-angular {
     margin-right: 10px;
     margin-left: 27px;
     /* margin-bottom: 58px; */
-    padding-top: 20px;
+    padding-top: 5px;
     /* padding-bottom: 10px; */
     width: 84px;
     height: 85px;
@@ -948,7 +948,35 @@ i.fab.fa-angular {
     /* width: 332px; */
     height: 220px;
     background-color: #343434;
-    background-image: url("../images/avt2.jpg");
+}
+
+#image-protfolio-item1 {
+    background-image: url("../images/project1.jfif");
+    background-size: cover;
+}
+
+#image-protfolio-item2 {
+    background-image: url("../images/project2.jfif");
+    background-size: cover;
+}
+
+#image-protfolio-item3 {
+    background-image: url("../images/project3.jfif");
+    background-size: cover;
+}
+
+#image-protfolio-item4 {
+    background-image: url("../images/project4.jfif");
+    background-size: cover;
+}
+
+#image-protfolio-item5 {
+    background-image: url("../images/project5.jfif");
+    background-size: cover;
+}
+
+#image-protfolio-item6 {
+    background-image: url("../images/project6.jfif");
     background-size: cover;
 }
 
@@ -1349,6 +1377,10 @@ ul.address {
     padding-top: -15px;
 }
 
+.list-awesome>ul>li {
+    font-size: 15px;
+}
+
 .slide ul {
     /* text-align: center; */
     /* margin: 111px 250px; */
@@ -1644,4 +1676,11 @@ img.hover-shadow {
 
 .hover-shadow:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/* feedback  */
+
+.feedback-list-item {
+    display: none;
 }
