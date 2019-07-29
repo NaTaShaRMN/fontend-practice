@@ -124,10 +124,10 @@
                 </div>
             </div>
             <ul>
-                <li onclick="showSlide(1)"><i class="far fa-square"></i></li>
-                <li onclick="showSlide(2)"><i class="far fa-square"></i></li>
-                <li onclick="showSlide(3)"><i class="far fa-square"></i></li>
-                <li onclick="showSlide(4)"><i class="far fa-square"></i></li>
+                <li onclick="currentSlides(1)"><i class="far fa-square"></i></li>
+                <li onclick="currentSlides(2)"><i class="far fa-square"></i></li>
+                <li onclick="currentSlides(3)"><i class="far fa-square"></i></li>
+                <li onclick="currentSlides(4)"><i class="far fa-square"></i></li>
             </ul>
 
         </div>
@@ -720,6 +720,9 @@
                 }, 3000);
         }
 
+        function currentSlides(n) {
+            showSlide(slideIndex = n);
+        }
 
 
         function showSlide(n) {
@@ -781,7 +784,7 @@
         }
 
 
-        showSlides(slideIndexs);
+        //showSlides(slideIndexs);
 
         // Next/previous controls
         function plusSlides(n) {
