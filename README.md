@@ -12,7 +12,7 @@ Thực hiện bởi [Nguyễn Anh Tuấn](https://github.com/NaTaShaRMN)
 - github page: https://natasharmn.github.io/fontend-practice/
 - PSD:https://drive.google.com/file/d/1EzDcLP29FS1ng6vQjGui8OKAXD1SSHkd/view
 - Các ví dụ về js : https://codepen.io/natbet/
-- A few diffrence about JS: 
+- A few diffrence about JS: https://drive.google.com/file/d/1civYLLsvXDItNp-H7Y-j_91A8WDF5qNV/view?usp=sharing
 ## Kiến thức nắm được
 
 
