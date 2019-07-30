@@ -716,11 +716,12 @@
         var loops;
 
         function loopSlide(n) {
-
+            slideIndex = n;
             loops = setInterval(function() {
-                slideIndex += n;
-                //if (slideIndex > 4) slideIndex = 1;
-                showSlide(slideIndex);
+
+                if (slideIndex > 4) slideIndex = 1;
+                showSlide(++slideIndex);
+
 
             }, 3000);
         }
@@ -730,7 +731,9 @@
         }
 
         function currentSlides(n) {
-            setInterval(showSlide(slideIndex = n), 2000);
+
+            showSlide(slideIndex = n);
+
 
 
         }
