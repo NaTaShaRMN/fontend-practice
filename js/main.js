@@ -69,9 +69,7 @@
 var slideIndex = 1;
 var slideIndexs = 1;
 var feedbackIndex = 1;
-showSlide(1);
-showFeedback(1);
-loopSlide(1);
+
 
 function loopSlide(n) {
 
@@ -225,3 +223,6 @@ function showInputSearch() {
 }
 var btn_search = document.querySelector(".btn-search");
 btn_search.addEventListener("click", showInputSearch);
+showSlide(1);
+showFeedback(1);
+loopSlide(1);
