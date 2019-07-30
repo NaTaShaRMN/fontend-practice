@@ -534,6 +534,10 @@ iframe {
     background-color: #03a9f4;
 }
 
+.btn-video>a:hover {
+    color: yellow;
+}
+
 .btn-video a {
     color: white;
 }
@@ -783,6 +787,10 @@ i.fab.fa-facebook {
 .list-awesome-item {
     padding: 13px 0px 0px 0px;
     position: relative;
+}
+
+.list-awesome-item p:hover {
+    color: #03a9f4;
 }
 
 .list-awesome-item i:hover {
@@ -1251,7 +1259,7 @@ a {
 }
 
 .nav-right {
-    padding-right: 35px;
+    padding-right: 62px;
     text-align: center;
     position: relative;
 }
@@ -1259,6 +1267,13 @@ a {
 .nav-right ul>li {
     padding-right: 13px;
     text-align: center;
+    margin-right: -2px;
+}
+
+li.discover:hover,
+li.discover:hover>a {
+    background-color: #03a9f4;
+    color: white;
 }
 
 li.input-search {

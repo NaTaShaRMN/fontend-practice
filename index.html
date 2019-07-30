@@ -39,12 +39,12 @@
             </div>
             <div class="nav-right">
                 <ul>
-                    <li class="actives"><a href="#">HOME</a></li>
-                    <li><a href="#">DEMOS</a></li>
-                    <li><a href="#">PORTFOLIO</a></li>
-                    <li><a href="#">BLOG</a></li>
-                    <li><a href="#">SHORTCODES</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li class="discover" onclick="discoverMenu(1)"><a href="#">HOME</a></li>
+                    <li class="discover" onclick="discoverMenu(2)"><a href="#">DEMOS</a></li>
+                    <li class="discover" onclick="discoverMenu(3)"><a href="#">PORTFOLIO</a></li>
+                    <li class="discover" onclick="discoverMenu(4)"><a href="#">BLOG</a></li>
+                    <li class="discover" onclick="discoverMenu(5)"><a href="#">SHORTCODES</a></li>
+                    <li class="discover" onclick="discoverMenu(6)"><a href="#">CONTACT</a></li>
                     <li class="btn-search">
                         <a href="#"><i class="fas fa-search"></i></a>
                     </li>
@@ -125,10 +125,10 @@
                 </div>
             </div>
             <ul>
-                <li onclick="currentSlides(1)"><i class="far fa-square"></i></li>
-                <li onclick="currentSlides(2)"><i class="far fa-square"></i></li>
-                <li onclick="currentSlides(3)"><i class="far fa-square"></i></li>
-                <li onclick="currentSlides(4)"><i class="far fa-square"></i></li>
+                <li onclick="currentSlides(1); stopSlide(); loopSlide(1);"><i class="far fa-square"></i></li>
+                <li onclick="currentSlides(2); stopSlide(); loopSlide(2);"><i class="far fa-square"></i></li>
+                <li onclick="currentSlides(3); stopSlide(); loopSlide(3);"><i class="far fa-square"></i></li>
+                <li onclick="currentSlides(4); stopSlide(); loopSlide(4);"><i class="far fa-square"></i></li>
             </ul>
 
         </div>
@@ -713,19 +713,25 @@
         showSlide(1);
         showFeedback(1);
         loopSlide(1);
+        var loops;
 
         function loopSlide(n) {
 
-            setTimeout(function() {
+            loops = setInterval(function() {
                 slideIndex += n;
                 //if (slideIndex > 4) slideIndex = 1;
                 showSlide(slideIndex);
-                loopSlide(n);
+
             }, 3000);
+        }
+
+        function stopSlide() {
+            clearInterval(loops);
         }
 
         function currentSlides(n) {
             setInterval(showSlide(slideIndex = n), 2000);
+
 
         }
 
@@ -872,6 +878,14 @@
         }
         var btn_search = document.querySelector(".btn-search a");
         btn_search.addEventListener("click", showInputSearch);
+        ///// 
+        function discoverMenu(n) {
+            var menus = document.querySelectorAll(".discover");
+            for (let i = 0; i < menus.length; i++) {
+                menus[i].classList.remove("actives");
+            }
+            menus[n - 1].classList.add("actives");
+        }
     </script>
 
 </body>
