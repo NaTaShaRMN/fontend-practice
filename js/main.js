@@ -65,6 +65,7 @@
 //     });
 // }
 
+// hihi
 var slideIndex = 1;
 var slideIndexs = 1;
 var feedbackIndex = 1;
@@ -73,17 +74,18 @@ showFeedback(1);
 loopSlide(1);
 
 function loopSlide(n) {
-    if (true)
-        setTimeout(function() {
-            slideIndex += n;
-            //if (slideIndex > 4) slideIndex = 1;
-            showSlide(slideIndex);
-            loopSlide(n);
-        }, 3000);
+
+    setTimeout(function() {
+        slideIndex += n;
+        //if (slideIndex > 4) slideIndex = 1;
+        showSlide(slideIndex);
+        loopSlide(n);
+    }, 3000);
 }
 
 function currentSlides(n) {
-    showSlide(slideIndex = n);
+    setTimeout(showSlide(slideIndex = n), 1000);
+
 }
 
 
