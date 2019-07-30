@@ -7,6 +7,10 @@
     grid-gap: 2px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .slide-container ul>li>a>i {
     color: #343434;
 }

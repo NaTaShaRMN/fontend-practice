@@ -725,7 +725,7 @@
         }
 
         function currentSlides(n) {
-            setTimeout(showSlide(slideIndex = n), 1000);
+            setInterval(showSlide(slideIndex = n), 2000);
 
         }
 
@@ -853,16 +853,22 @@
             feedbackImage[feedbackIndex - 1].className += " visited";
             feedbackText[feedbackIndex - 1].style.display = "block";
         }
-        // back tot top
+        // back to top
         function topFunction() {
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
+
         }
+        var temp = 1;
 
         function showInputSearch() {
 
             var input_search = document.querySelector(".input-search");
-            input_search.style.display = "block";
+            if (temp % 2 != 0)
+                input_search.style.display = "block";
+            else
+                input_search.style.display = "none";
+            temp++;
         }
         var btn_search = document.querySelector(".btn-search");
         btn_search.addEventListener("click", showInputSearch);
