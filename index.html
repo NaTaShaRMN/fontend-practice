@@ -48,7 +48,8 @@
                     <li class="btn-search">
                         <a href="#"><i class="fas fa-search"></i></a>
                     </li>
-                    <li class="input-search"><input type="text" placeholder="search..."></li>
+                    <li class="input-search"><input type="text" placeholder="search..."><span><i class="fas fa-search"></i></span></li>
+
                 </ul>
             </div>
 
@@ -135,7 +136,7 @@
         <div class="service">
             <div class="service-type">
                 <img src="images/3circle.png" alt="">
-                <div class="ex"><a href="#">User Interface</a></div>
+                <span class="ex"><a href="#">User Interface</a></span>
                 <p>Successfull Trends for Digital Product</p>
                 <p class="last-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea eius, velit non molestiae omnis quisquam ipsa neque consequatur?</p>
             </div>
@@ -415,7 +416,7 @@
                         <div class="col-text-left">
                             <p class="fullname">ROBERT MARTIN</p>
                             <p style="color: #03a9f4">FOUNDER</p>
-                            <P class="info">Lorem ipsum dolor sit amet, sea an omittam consequat vituperata. Iisque expetenda vis eu, exerci minimum an his. Has ea omnesque patrioque, in mel fadolore, nisl eligend.</P>
+                            <P class="info">Lorem ipsum dolor sit amet, sea an omittam consequat vituperata. Iisque expetenda vis eu, exerci minimum an his. Has ea omnesque patrioque, in mel </P>
                         </div>
                         <div class="col-image-left">
                             <img src="images/person.jpg" alt="boxbox">
@@ -437,7 +438,7 @@
                         <div class="col-text-right">
                             <p class="fullname">ROBERT MARTIN</p>
                             <p style="color: #03a9f4">FOUNDER</p>
-                            <P class="info">Lorem ipsum dolor sit amet, sea an omittam consequat vituperata. Iisque expetenda vis eu, exerci minimum an his. Has ea omnesque patrioque, in mel fadolore, nisl eligend.</P>
+                            <P class="info">Lorem ipsum dolor sit amet, sea an omittam consequat vituperata. Iisque expetenda vis eu, exerci minimum an his. Has ea omnesque patrioque, in mel </P>
                         </div>
                     </div>
                 </div>
@@ -446,7 +447,7 @@
                         <div class="col-text-left">
                             <p class="fullname">ROBERT MARTIN</p>
                             <p style="color: #03a9f4">FOUNDER</p>
-                            <P class="info">Lorem ipsum dolor sit amet, sea an omittam consequat vituperata. Iisque expetenda vis eu, exerci minimum an his. Has ea omnesque patrioque, in mel fadolore, nisl eligend.</P>
+                            <P class="info">Lorem ipsum dolor sit amet, sea an omittam consequat vituperata. Iisque expetenda vis eu, exerci minimum an his. Has ea omnesque patrioque, in mel </P>
                         </div>
                         <div class="col-image-left">
                             <img src="images/person.jpg" alt="boxbox">
@@ -468,7 +469,7 @@
                         <div class="col-text-right">
                             <p class="fullname">ROBERT MARTIN</p>
                             <p style="color: #03a9f4">FOUNDER</p>
-                            <P class="info">Lorem ipsum dolor sit amet, sea an omittam consequat vituperata. Iisque expetenda vis eu, exerci minimum an his. Has ea omnesque patrioque, in mel fadolore, nisl eligend.</P>
+                            <P class="info">Lorem ipsum dolor sit amet, sea an omittam consequat vituperata. Iisque expetenda vis eu, exerci minimum an his. Has ea omnesque patrioque, in mel </P>
                         </div>
                     </div>
                 </div>
@@ -771,11 +772,19 @@
         // }
 
         // xu li list awesome tab
+
         var acc = document.getElementsByClassName("list-awesome-item");
 
 
         for (let i = 0; i < acc.length; i++) {
             acc[i].addEventListener("click", function() {
+                for (let j = 0; j < acc.length; j++) {
+                    if (j != i) {
+                        let tmp = acc[j].nextElementSibling;
+                        tmp.style.maxHeight = null;
+                        acc[j].classList.remove("active");
+                    }
+                }
                 this.classList.toggle("active");
                 var panel = this.nextElementSibling;
                 console.log(panel);
@@ -786,6 +795,7 @@
                 }
             });
         }
+
         //////////////////////////////// list image
 
         function openModal() {
