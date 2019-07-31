@@ -7,6 +7,18 @@
     grid-gap: 2px;
 }
 
+.ex {
+    width: 156px;
+    font-size: 10;
+    font-size: 27px;
+    font-weight: 600;
+    border-bottom: 3px solid;
+}
+
+.ex a:hover {
+    color: white;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -40,6 +52,13 @@ html {
 .feature-item-content h5 {
     font-weight: 600;
     font-size: 16px;
+}
+
+.feature-item-content h5:hover {
+    color: red;
+    /* border: 1px solid; */
+    /* size: 52px; */
+    transform: scale;
 }
 
 .feature-item-content p {
@@ -121,6 +140,10 @@ footer {
     height: 38px;
     text-align: center;
     padding-top: 7px;
+}
+
+h1:hover {
+    color: yellow;
 }
 
 .feedbacks {
@@ -635,6 +658,7 @@ p.fullname {
 
 .col.right i {
     margin-left: 2px;
+    font-size: 18px;
 }
 
 .col {
@@ -706,7 +730,7 @@ p.fullname {
     /* padding-left: 17px; */
     padding: 4px;
     margin-left: -5px;
-    margin-right: 8px;
+    margin-right: 6px;
     /* border: 1px solid; */
     border-radius: 45px;
     background-color: #03a9f4;
@@ -944,6 +968,11 @@ i.fab.fa-angular {
     height: 552px;
 }
 
+.skill h4:hover {
+    color: blue;
+    size: 17px;
+}
+
 .path {
     margin: 32px 0px 21px;
 }
@@ -1073,13 +1102,22 @@ i.fab.fa-angular {
 .service-type span {
     font-weight: 600;
     border-bottom: 3px solid;
+    /* padding-bottom: 5px; */
     font-size: 27px;
+    /* margin-bottom: -64px; */
     /* margin-bottom: 112px; */
     color: #362d2d;
+    /* height: 44px; */
+}
+
+span.ex:hover,
+span.ex>a:hover {
+    color: white;
 }
 
 .service-type a {
     color: #404040;
+    border-bottom: 3px solid;
 }
 
 .about p {
@@ -1094,6 +1132,10 @@ i.fab.fa-angular {
     padding: 106px;
     background-image: url("../images/gb_about.jfif");
     background-size: cover;
+}
+
+.about:hover {
+    transform: scale(1.1);
 }
 
 .service-type p {
@@ -1130,6 +1172,15 @@ h4 .company-skill {
 .service-type {
     padding: 42px 27px;
     border-right: 1px solid #faefef;
+}
+
+.service-type {
+    /* color: #6d2727 !important; */
+}
+
+.service-type:hover {
+    background-color: #03a9f4;
+    color: white;
 }
 
 .service-type.activess {
@@ -1179,10 +1230,18 @@ h3 {
     font-family: none;
 }
 
+h3:hover {
+    color: red;
+}
+
 .banner h4 {
     padding-top: 39px;
     color: #ffffff;
+    animation-name: example;
+    animation-duration: 4s;
 }
+
+.banner h4:hover {}
 
 .about h3 {
     color: #404040;
@@ -1201,19 +1260,29 @@ h1 {
 }
 
 .btn-slide-left {
-    padding: 12px 38px;
-    background-color: white;
+    padding: 12px 2px;
+    /* background-color: white; */
     border-radius: 30px;
     /* color: #03a9f4; */
     border: 1px solid white;
 }
 
 .btn-slide-left a {
+    color: white;
+    padding: 13px 40px;
+    border-radius: 14px;
+}
+
+.btn-slide-right:hover,
+.btn-slide-left:hover,
+.btn-slide-left a:hover,
+.btn-slide-right a:hover {
+    background-color: white;
     color: #03a9f4;
 }
 
 .btn-slide-right {
-    padding: 12px 38px;
+    padding: 12px 2px;
     /* background-color: rebeccapurple; */
     margin-left: 51px;
     border-radius: 30px;
@@ -1222,6 +1291,8 @@ h1 {
 
 .btn-slide-right a {
     color: #ffffff;
+    padding: 12px 40px;
+    border-radius: 14px;
 }
 
 a {
@@ -1256,6 +1327,12 @@ a {
 
 .contact-right {
     color: #bababa;
+}
+
+.contact-right>ul>li>i:hover {
+    color: white;
+    size: scale(1.1);
+    transform: scale;
 }
 
 .nav-right {
@@ -1411,6 +1488,10 @@ ul {
 
 ul.address {
     margin-left: 12px;
+}
+
+ul.address>li>i {
+    margin-right: 4px;
 }
 
 .list-awesome {
@@ -1595,7 +1676,7 @@ div#angularjss {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: black;
+    background-color: #121111d1;
 }
 
 
@@ -1724,4 +1805,13 @@ img.hover-shadow {
 
 .feedback-list-item {
     display: none;
+}
+
+@keyframes example {
+    from {
+        color: red;
+    }
+    to {
+        color: white
+    }
 }
