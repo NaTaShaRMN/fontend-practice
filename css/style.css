@@ -7,6 +7,58 @@
     grid-gap: 2px;
 }
 
+.feature-item-content {}
+
+sup {
+    /* margin-bottom: 100px; */
+    position: absolute;
+    right: 3px;
+    top: 2px;
+}
+
+.icons>p {
+    margin-top: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    position: relative;
+}
+
+.icons {
+    background-color: #03a9f4;
+    border-radius: 49%;
+    height: 28px;
+    width: 28px;
+    margin: 0px 4px;
+    text-align: center;
+}
+
+.icons i {
+    font-size: 11px;
+}
+
+.iconss {
+    display: flex;
+    margin: 3px 0px 0px 14px;
+}
+
+.percent {
+    position: absolute;
+    right: 4px;
+    bottom: 3px;
+    color: #8b8989;
+}
+
+.list-awesome-item-hidden {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    border-bottom: 1px solid #f0ecec;
+    transition: max-height 0.2s ease-out;
+}
+
+div#li1 {}
+
 .about-content {
     width: 927px;
     /* margin-top: -10px; */
@@ -70,6 +122,7 @@ html {
 .feature-item-content h5 {
     font-weight: 600;
     font-size: 16px;
+    margin-bottom: 15px;
 }
 
 .feature-item-content h5:hover {
@@ -82,6 +135,7 @@ html {
 .feature-item-content p {
     font-size: 14px;
     margin-top: 10px;
+    line-height: 24px;
 }
 
 .btn-hide {
@@ -94,6 +148,7 @@ html {
     right: 364px;
     top: -21px;
     text-align: center;
+    cursor: pointer;
     /* margin: auto; */
 }
 
@@ -630,6 +685,7 @@ img {}
 
 p.info {
     margin-top: 17px;
+    font-size: 15px;
 }
 
 .col-image-right {
@@ -638,7 +694,8 @@ p.info {
 
 .col-image-right img {
     border-radius: 64px;
-    width: 111px;
+    width: 137px;
+    object-fit: cover;
 }
 
 .col-image-right image {}
@@ -649,7 +706,8 @@ p.info {
 
 .col-image-left img {
     border-radius: 64px;
-    width: 111px;
+    width: 137px;
+    object-fit: cover;
 }
 
 .col-text-left {
@@ -687,8 +745,16 @@ p.fullname {
 }
 
 .col.right i {
-    margin-left: 2px;
+    margin: 5px 0px 0px;
     font-size: 18px;
+}
+
+.icons>i.fab.fa-linkedin-in {
+    font-size: 12px;
+}
+
+.icons>i.fab.fa-twitter {
+    font-size: 12px;
 }
 
 .col {
@@ -698,7 +764,9 @@ p.fullname {
 
 .col.left i {
     /* padding-top: 29px; */
-    margin-left: 0px;
+    /* margin-left: 0px; */
+    margin: 5px 0px 0px;
+    /* margin-bottom: -9px; */
 }
 
 .col.left.last {
@@ -763,7 +831,7 @@ p.fullname {
     margin-right: 6px;
     /* border: 1px solid; */
     border-radius: 45px;
-    background-color: #03a9f4;
+    /* background-color: #03a9f4; */
 }
 
 .abouts i {
@@ -792,6 +860,10 @@ i.fab.fa-facebook {
 .icon {
     margin-right: 15px;
     margin-top: 6px;
+}
+
+.icon i {
+    font-size: 23px;
 }
 
 .feature {
@@ -839,8 +911,10 @@ i.fab.fa-facebook {
 }
 
 .list-awesome-item {
-    padding: 13px 0px 0px 0px;
+    padding: 0px;
     position: relative;
+    border-bottom: 1px solid #f0ecec;
+    cursor: pointer;
 }
 
 .list-awesome-item p:hover {
@@ -873,7 +947,12 @@ div#androids {
 
 .list-skill {
     /* padding-top: 0px; */
-    margin-top: 75px;
+    margin-top: 57px;
+    /* height: 233px; */
+}
+
+.list-skill>ul {
+    height: 330px;
 }
 
 .skill-name {
@@ -881,26 +960,29 @@ div#androids {
     margin-bottom: -1px;
     /* margin-top: 24px; */
     /* padding-top: 2px; */
-    margin-bottom: 17px;
+    margin-bottom: 10px;
 }
 
 .list-skill-item li {
-    background-color: white;
+    /* background-color: white; */
     padding-left: -10px;
+    float: right;
 }
 
 .list-skill li {
     /* margin-left: 17px; */
     margin-bottom: 1px;
+    /* position: absolute; */
+    /* right: 0; */
 }
 
 #angular {
-    margin-left: 11px;
+    margin-left: 4px;
     margin-top: 6px;
 }
 
 #html5 {
-    margin-left: 13px;
+    margin-left: 6px;
     margin-top: 6px;
 }
 
@@ -911,17 +993,24 @@ div#androids {
 }
 
 #android {
-    margin-left: 11px;
+    margin-left: 0px;
 }
 
 #web-dev {
-    margin-left: 5px;
+    margin-left: 0px;
     margin-top: 6px;
+}
+
+div#web-dev img {
+    width: 413px;
 }
 
 .list-skill-item {
     display: flex;
     margin-bottom: 17px;
+    background-color: white;
+    /* margin-left: -7px; */
+    position: relative;
 }
 
 #android {
@@ -932,11 +1021,19 @@ div#android {
     /* background-color: blue; */
     /* padding: 0px 172px; */
     /* margin: 8px; */
-    margin-top: 6px;
+    margin-top: 4px;
+    margin-left: 6px;
+}
+
+div#android>li {
+    /* margin-left: 57px; */
 }
 
 .list-skill-item i {
-    margin-top: 8px;
+    margin-top: 0px;
+    padding-top: 6px;
+    padding-right: 12px;
+    background-color: #fafafa;
 }
 
 i.fas.fa-tags {
@@ -958,19 +1055,21 @@ i.fab.fa-angular {
 .list-awesome {}
 
 .person-skill img {
-    margin-right: 10px;
-    margin-left: 27px;
-    /* margin-bottom: 58px; */
+    margin-right: 6px;
+    margin-left: 18px;
+    margin-bottom: 15px;
     padding-top: 5px;
     /* padding-bottom: 10px; */
     width: 84px;
     height: 85px;
+    object-fit: cover;
 }
 
 .person-skill {
     display: flex;
     justify-content: space-around;
     padding: 20px 0px 10px 0px;
+    /* border-bottom: 1px solid #a47a7a; */
 }
 
 .conpany-skill {
@@ -981,12 +1080,20 @@ i.fab.fa-angular {
     margin-left: 23px;
 }
 
+.conpany-skill p {
+    color: #9a8d8d;
+}
+
 .conpany-skill h4 {
-    margin: 57px 0px 47px;
+    margin: 84px 0px 0px;
 }
 
 .awesome-tab {
     flex: 1;
+}
+
+.awesome-tab p {
+    color: #9a8d8d;
 }
 
 .skill {
@@ -1012,7 +1119,7 @@ i.fab.fa-angular {
 }
 
 .path a:hover {
-    color: red;
+    color: #bd3fcf;
 }
 
 .image-protfolio-item {
@@ -1027,8 +1134,13 @@ i.fab.fa-angular {
     cursor: pointer;
 }
 
+sup {
+    font-size: 8px;
+}
+
 .image-protfolio-item:hover {
     transform: scale(1.1);
+    transition: transform 0.5s ease;
 }
 
 #image-protfolio-item2 {
@@ -1199,11 +1311,11 @@ h4 .company-skill {
 }
 
 .awesome-tab h4 {
-    margin: 57px 0px 75px 0px;
+    margin: 84px 0px 60px 0px;
 }
 
 .protfolio h4 {
-    margin: 54px 0px;
+    margin: 54px 0px 71px;
     font-weight: 100;
 }
 
@@ -1304,7 +1416,7 @@ h1 {
 }
 
 .btn-slide-left {
-    padding: 12px 2px;
+    padding: 12px 3px;
     /* background-color: white; */
     border-radius: 30px;
     /* color: #03a9f4; */
@@ -1313,7 +1425,7 @@ h1 {
 
 .btn-slide-left a {
     color: white;
-    padding: 13px 40px;
+    padding: 10px 40px;
     border-radius: 14px;
 }
 
@@ -1568,6 +1680,7 @@ li.active a {
     padding: 8px;
     font-size: 13px;
     letter-spacing: 1px;
+    cursor: pointer;
 }
 
 header {
@@ -1585,12 +1698,7 @@ li {
     display: inline-block;
 }
 
-.list-awesome li {
-    /* background-color: white; */
-    /* border: 1px solid #f7f3f3; */
-    /* padding: 17px 10px; */
-    /* margin-right: 136px; */
-}
+.list-awesome li {}
 
 #text-blue p {
     color: #03a9f4;
@@ -1598,6 +1706,7 @@ li {
 }
 
 .list-awesome p {
+    margin: auto 0px;
     padding-left: 10px;
 }
 
@@ -1625,6 +1734,7 @@ ul.address>li>i {
 .list-awesome {
     background-color: white;
     padding-top: -15px;
+    box-shadow: 1px 1px 1px 1px #f3f3f3;
 }
 
 .list-awesome>ul>li {
@@ -1759,7 +1869,9 @@ div#angularjss {
     color: #777;
     font-weight: bold;
     float: left;
-    margin-left: 5px;
+    padding: 14px 14px;
+    /* margin-left: 5px; */
+    background-color: #d6d3d3;
 }
 
 .active:before {
@@ -1817,7 +1929,7 @@ div#angularjss {
 .modal-content {
     position: relative;
     background-color: #fefefe;
-    margin: auto;
+    margin: -39px auto;
     padding: 0;
     width: 90%;
     max-width: 1200px;
@@ -1851,8 +1963,9 @@ div#angularjss {
 
 .mySlides img {
     width: 1200px;
-    height: 450px;
-    /* object-fit: cover; */
+    height: 565px;
+    object-fit: cover;
+    /* background-position: 1px 1094px; */
 }
 
 
