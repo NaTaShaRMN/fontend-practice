@@ -7,6 +7,10 @@
     grid-gap: 2px;
 }
 
+.team-container>img {
+    /* cursor: pointer; */
+}
+
 .feedback-content {
     display: flex;
     /* position: absolute; */
@@ -35,6 +39,7 @@ sup {
     width: 28px;
     margin: 0px 4px;
     text-align: center;
+    cursor: pointer;
 }
 
 .icons i {
@@ -645,7 +650,7 @@ span {}
 
 .next-pointer i {
     /* height: 16px; */
-    font-size: 34px;
+    font-size: 40px;
     /* size: 57px; */
 }
 
@@ -844,7 +849,7 @@ p.fullname {
 
 .next-pointer.first i {
     transform: rotate(180deg);
-    font-size: 34px;
+    font-size: 40px;
 }
 
 .last {
