@@ -160,13 +160,17 @@
         width: 40px;
         border-radius: 45px;
         /* margin-top: -22px; */
-        background-color: #03a9f4;
+        background-color: #636363;
         position: absolute;
         right: 364px;
         top: -21px;
         text-align: center;
         cursor: pointer;
         /* margin: auto; */
+    }
+    
+    .btn-hide:hover {
+        background-color: #03a9f4;
     }
     
     .btn-hide i {
@@ -620,8 +624,8 @@
     }
     
     .circle-item {
-        width: 60px;
-        height: 60px;
+        width: 53px;
+        height: 53px;
         background-color: #c0c1d4;
         margin: 10px -105px 11px;
         border-radius: 50%;
